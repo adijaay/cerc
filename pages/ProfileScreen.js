@@ -7,6 +7,8 @@ import {
   Alert
 } from "react-native";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { faCopy, faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 function ProfileScreen({route}) {
   const [data, setData] = useState("");
@@ -38,6 +40,15 @@ function ProfileScreen({route}) {
         <Text style={styles.headerTextDesc}>{"Public Repos: " + data.public_repos}</Text>
         <Text style={styles.bodyText}>{data.bio}</Text>
       </View>
+      <View style={{justifyContent: 'center', flexDirection: 'row', marginTop: 30}}>
+        <FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon>
+        <Text style={{marginLeft: 5}}>Bikinan Jay</Text>
+      </View>
+      <View style={{justifyContent: 'center', flexDirection: 'row'}}>
+      <Text style={{textAlign: 'center'}}>{'Computer Engineering, 2022\nDiponegoro University\n\nTugas Akhir Praktikum PPB 2022'}</Text>
+      </View>
+      
+
     </View>
   );
 }

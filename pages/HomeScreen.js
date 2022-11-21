@@ -41,14 +41,14 @@ function HomeScreen({ navigation }) {
           </TouchableOpacity>
         )}
       />
-      <TouchableOpacity onPress={() => navigation.navigate('About Me', {msg: null}) } style={{
+      <TouchableOpacity onPress={() => navigation.navigate('About App', {msg: null}) } style={{
             backgroundColor: '#212121',
             paddingVertical: 20,
             marginBottom: 10,
             borderRadius: 10,
             elevation: 2,
             marginHorizontal: 10}}>
-        <Text style={{color: '#FFFFFF', textAlign: "center"}}>About Me</Text>
+        <Text style={{color: '#FFFFFF', textAlign: "center"}}>About App</Text>
       </TouchableOpacity>
       </View>
   );

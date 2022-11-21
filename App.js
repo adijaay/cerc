@@ -19,7 +19,7 @@ export default function App() {
         <Stack.Screen name="HomeNews" component={News}/>
         <Stack.Screen name="Details" component={Details}/>
         <Stack.Screen name="News Detail" component={DetailNews}/>
-        <Stack.Screen name="About Me" component={ProfileScreen}/>
+        <Stack.Screen name="About App" component={ProfileScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
